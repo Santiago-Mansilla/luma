@@ -173,9 +173,7 @@ function App() {
             <section className="menu" id="menu">
               <div className="menu__heading">
                 <p className="section__eyebrow">Our menu</p>
-
                 <h2>Simple things, done well.</h2>
-
                 <p>
                   From a quick espresso to a slow afternoon pastry, choose
                   something made for your moment.
@@ -201,27 +199,32 @@ function App() {
                 )}
               </div>
 
-              <div className="menu__grid">
-                {filteredItems.map((item) => (
-                  <article className="menu__item" key={item.id}>
-                    <div>
-                      <p>{item.category}</p>
-                      <h3>{item.name}</h3>
-                      <span>{item.description}</span>
-                    </div>
+              <div className="menu__card">
+                <div className="menu__card-header">
+                  <span>LUMA</span>
+                  <p>COFFEE · FOOD · PASTRIES</p>
+                </div>
 
-                    <div className="menu__item-bottom">
-                      <strong>{item.price}</strong>
+                <div className="menu__items">
+                  {filteredItems.map((item) => (
+                    <article className="menu__item" key={item.id}>
+                      <div className="menu__item-content">
+                        <div className="menu__item-title">
+                          <h3>{item.name}</h3>
+                          <span></span>
+                          <strong>{item.price}</strong>
+                        </div>
 
-                      <button
-                        type="button"
-                        onClick={() => setSelectedItem(item)}
-                      >
-                        View
-                      </button>
-                    </div>
-                  </article>
-                ))}
+                        <p>{item.description}</p>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+
+                <div className="menu__card-footer">
+                  <span>Made fresh every day</span>
+                  <span>LUMA COFFEE HOUSE</span>
+                </div>
               </div>
             </section>
 

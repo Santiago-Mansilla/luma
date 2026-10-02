@@ -9,11 +9,11 @@
     }
   }
 
-  .menu {
-    .menu__grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+   .menu {
+    .menu__card {
+    padding: 45px 40px;
   }
+}
 
   .contact {
     grid-template-columns: 0.9fr 1.1fr;
@@ -149,33 +149,67 @@
   }
 
   .menu {
-    padding: 90px 24px;
+  padding: 90px 24px;
 
-    .menu__heading {
-      h2 {
-        font-size: clamp(3rem, 11vw, 4.5rem);
-      }
-
-      p:last-child {
-        margin-top: 20px;
-      }
+  .menu__heading {
+    h2 {
+      font-size: clamp(3rem, 11vw, 4.5rem);
     }
 
-    .menu__filters {
-      margin-top: 36px;
-    }
-
-    .menu__grid {
-      margin-top: 40px;
-      grid-template-columns: 1fr;
-    }
-
-    .menu__item {
-      min-height: 260px;
+    p:last-child {
+      margin-top: 20px;
     }
   }
 
-  .contact {
+  .menu__filters {
+    margin-top: 36px;
+  }
+
+  .menu__card {
+    margin-top: 45px;
+    padding: 35px 24px;
+  }
+
+  .menu__card-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+
+    p {
+      text-align: left;
+    }
+  }
+
+  .menu__item {
+    min-height: auto;
+    padding: 22px 0;
+  }
+
+  .menu__item-title {
+    gap: 8px;
+
+    h3 {
+      font-size: 1.15rem;
+    }
+
+    strong {
+      font-size: 0.85rem;
+    }
+  }
+
+  .menu__item-content {
+    > p {
+      font-size: 0.8rem;
+    }
+  }
+
+  .menu__card-footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.contact {
     width: calc(100% - 48px);
     padding: 90px 0;
     grid-template-columns: 1fr;
@@ -315,26 +349,34 @@
   }
 
   .menu {
-    padding: 80px 24px;
+  padding: 80px 24px;
 
-    .menu__filters {
-      gap: 8px;
+  .menu__filters {
+    gap: 8px;
+  }
+
+  .menu__filter {
+    padding: 9px 15px;
+    font-size: 0.8rem;
+  }
+
+  .menu__card {
+    margin-top: 40px;
+    padding: 30px 18px;
+  }
+
+  .menu__item-title {
+    align-items: flex-start;
+
+    h3 {
+      white-space: normal;
     }
 
-    .menu__filter {
-      padding: 9px 15px;
-      font-size: 0.8rem;
-    }
-
-    .menu__grid {
-      margin-top: 35px;
-    }
-
-    .menu__item {
-      min-height: 250px;
-      padding: 22px;
+    span {
+      margin-top: 0.7rem;
     }
   }
+}
 
   .contact {
     width: calc(100% - 40px);
