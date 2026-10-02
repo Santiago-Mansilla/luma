@@ -1,0 +1,392 @@
+@media (max-width: 1100px) {
+  .hero {
+    .hero__content {
+      padding: 80px 45px;
+    }
+
+    h1 {
+      font-size: clamp(4.5rem, 9vw, 8rem);
+    }
+  }
+
+  .menu {
+    .menu__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .contact {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 70px;
+  }
+
+  .about {
+    .about__hero {
+      padding: 70px 0 120px;
+    }
+
+    h1 {
+      font-size: clamp(4.5rem, 9vw, 8rem);
+    }
+
+    .about__story {
+      gap: 60px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+    z-index: 10;
+    width: calc(100% - 32px);
+    height: 72px;
+
+    .navbar__toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 40px;
+      height: 40px;
+      padding: 8px;
+      border: 0;
+      background: transparent;
+
+      span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #2b2520;
+      }
+    }
+
+    .navbar__links {
+      position: absolute;
+      top: 72px;
+      right: 0;
+      z-index: 20;
+      width: 180px;
+      padding: 20px;
+      display: none;
+      flex-direction: column;
+      gap: 18px;
+      border: 1px solid #ded5ca;
+      border-radius: 16px;
+      background: #f4efe8;
+      box-shadow: 0 12px 30px rgba(43, 37, 32, 0.12);
+
+      &.navbar__links--open {
+        display: flex;
+      }
+
+      a {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .hero {
+    width: calc(100% - 32px);
+    min-height: calc(100vh - 88px);
+    border-radius: 24px;
+
+    .hero__content {
+      padding: 70px 28px;
+    }
+
+    .hero__eyebrow {
+      margin-bottom: 22px;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+    }
+
+    h1 {
+      font-size: clamp(3.7rem, 14vw, 6rem);
+      line-height: 0.86;
+
+      span {
+        margin-left: 7vw;
+      }
+    }
+
+    .hero__text {
+      max-width: 420px;
+      margin-top: 34px;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .hero__actions {
+      margin-top: 28px;
+    }
+
+    .hero__button {
+      min-height: 48px;
+      padding: 0 21px;
+      font-size: 1rem;
+    }
+  }
+
+  .feature {
+    min-height: 460px;
+    padding: 90px 24px;
+
+    .feature__content {
+      h2 {
+        font-size: clamp(3rem, 11vw, 4.5rem);
+      }
+
+      p:not(.section__eyebrow) {
+        max-width: 520px;
+        margin-top: 26px;
+      }
+
+      a {
+        margin-top: 26px;
+      }
+    }
+  }
+
+  .menu {
+    padding: 90px 24px;
+
+    .menu__heading {
+      h2 {
+        font-size: clamp(3rem, 11vw, 4.5rem);
+      }
+
+      p:last-child {
+        margin-top: 20px;
+      }
+    }
+
+    .menu__filters {
+      margin-top: 36px;
+    }
+
+    .menu__grid {
+      margin-top: 40px;
+      grid-template-columns: 1fr;
+    }
+
+    .menu__item {
+      min-height: 260px;
+    }
+  }
+
+  .contact {
+    width: calc(100% - 48px);
+    padding: 90px 0;
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .footer {
+    padding: 40px 24px;
+    grid-template-columns: 1fr;
+    gap: 25px;
+
+    .footer__links {
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer__copy {
+      justify-self: start;
+    }
+  }
+
+  .modal {
+    padding: 16px;
+
+    .modal__content {
+      padding: 32px 26px;
+
+      h3 {
+        font-size: 2.1rem;
+      }
+    }
+  }
+
+  .about {
+    width: calc(100% - 32px);
+    padding: 50px 0 80px;
+
+    .about__hero {
+      padding: 50px 0 90px;
+    }
+
+    .about__eyebrow {
+      margin-bottom: 24px;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+    }
+
+    h1 {
+      font-size: clamp(3.7rem, 14vw, 6rem);
+      line-height: 0.86;
+
+      span {
+        margin-left: 7vw;
+      }
+    }
+
+    .about__intro {
+      max-width: 520px;
+      margin: 42px 0 0;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .about__story {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding: 70px 0;
+    }
+
+    .about__story-label {
+      p {
+        font-size: 0.78rem;
+      }
+    }
+
+    .about__story-content {
+      h2 {
+        margin-bottom: 26px;
+        font-size: clamp(2.8rem, 11vw, 4.5rem);
+      }
+
+      p {
+        font-size: 0.98rem;
+        line-height: 1.7;
+      }
+    }
+
+    .about__quote {
+      padding: 100px 0;
+
+      p {
+        font-size: clamp(3rem, 13vw, 5rem);
+        line-height: 0.9;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    .navbar__links {
+      gap: 14px;
+
+      a {
+        font-size: 0.76rem;
+      }
+    }
+  }
+
+  .hero {
+    .hero__content {
+      padding: 60px 22px;
+    }
+
+    h1 {
+      font-size: clamp(3.3rem, 15vw, 4.8rem);
+    }
+
+    .hero__text {
+      font-size: 1rem;
+    }
+  }
+
+  .feature {
+    min-height: 420px;
+    padding: 80px 24px;
+
+    .feature__content {
+      h2 {
+        font-size: clamp(2.8rem, 12vw, 4rem);
+      }
+
+      p:not(.section__eyebrow) {
+        font-size: 0.95rem;
+      }
+    }
+  }
+
+  .menu {
+    padding: 80px 24px;
+
+    .menu__filters {
+      gap: 8px;
+    }
+
+    .menu__filter {
+      padding: 9px 15px;
+      font-size: 0.8rem;
+    }
+
+    .menu__grid {
+      margin-top: 35px;
+    }
+
+    .menu__item {
+      min-height: 250px;
+      padding: 22px;
+    }
+  }
+
+  .contact {
+    width: calc(100% - 40px);
+    padding: 80px 0;
+  }
+
+  .footer {
+    padding: 35px 20px;
+
+    .footer__links {
+      gap: 16px;
+    }
+  }
+
+  .about {
+    width: calc(100% - 40px);
+    padding: 35px 0 65px;
+
+    .about__hero {
+      padding: 40px 0 75px;
+    }
+
+    h1 {
+      font-size: clamp(3.2rem, 15vw, 4.8rem);
+    }
+
+    .about__intro {
+      margin-top: 34px;
+      font-size: 0.98rem;
+    }
+
+    .about__story {
+      gap: 32px;
+      padding: 60px 0;
+    }
+
+    .about__story-content {
+      h2 {
+        font-size: clamp(2.7rem, 12vw, 4rem);
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+
+    .about__quote {
+      padding: 80px 0;
+
+      p {
+        font-size: clamp(2.8rem, 13vw, 4rem);
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.about {
+  width: min(100% - 48px, 1440px);
+  margin: 0 auto;
+  padding: 80px 0 120px;
+  color: #111111;
+
+  .about__hero {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 80px 0 140px;
+  }
+
+  .about__eyebrow {
+    margin: 0 0 32px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(17, 17, 17, 0.55);
+  }
+
+  h1 {
+    max-width: 1050px;
+    margin: 0;
+    font-size: clamp(5rem, 10vw, 10rem);
+    line-height: 0.82;
+    letter-spacing: -0.07em;
+    font-weight: 500;
+
+    span {
+      display: block;
+      margin-left: 10vw;
+      font-style: italic;
+      font-weight: 400;
+    }
+  }
+
+  .about__intro {
+    max-width: 620px;
+    margin: 64px 0 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: rgba(17, 17, 17, 0.68);
+  }
+
+  .about__story {
+    display: grid;
+    grid-template-columns: 0.8fr 1.5fr;
+    gap: 80px;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 90px 0;
+    border-top: 1px solid rgba(17, 17, 17, 0.14);
+    border-bottom: 1px solid rgba(17, 17, 17, 0.14);
+  }
+
+  .about__story-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+
+    p {
+      margin: 0;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: rgba(17, 17, 17, 0.5);
+    }
+  }
+
+  .about__story-content {
+    max-width: 700px;
+
+    h2 {
+      margin: 0 0 32px;
+      font-size: clamp(2.5rem, 5vw, 5rem);
+      line-height: 0.95;
+      letter-spacing: -0.05em;
+      font-weight: 500;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 0 0 24px;
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: rgba(17, 17, 17, 0.68);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .about__quote {
+    display: flex;
+    justify-content: center;
+    padding: 150px 0;
+
+    p {
+      max-width: 900px;
+      margin: 0;
+      text-align: center;
+      font-size: clamp(3rem, 7vw, 7rem);
+      line-height: 0.9;
+      letter-spacing: -0.06em;
+      font-weight: 500;
+
+      span {
+        display: block;
+        font-style: italic;
+        font-weight: 400;
+      }
+    }
+  }
+
+  }
