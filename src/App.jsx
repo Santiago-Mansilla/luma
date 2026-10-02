@@ -272,7 +272,7 @@ function App() {
                 <div className="contact__info">
                   <div>
                     <strong>Address</strong>
-                    <span>18 Oak Street, Downtown</span>
+                    <span>24 Willow Lane, Portland, OR</span>
                   </div>
 
                   <div>
@@ -322,13 +322,6 @@ function App() {
           <span>LUMA</span>
           <p>Your daily coffee ritual.</p>
         </div>
-
-        <nav className="footer__links">
-          <a href="/about">About</a>
-          <a href="/#menu">Menu</a>
-          <a href="/#contact">Contact</a>
-        </nav>
-
         <p className="footer__copy">© 2026 LUMA. All rights reserved.</p>
       </footer>
     </>

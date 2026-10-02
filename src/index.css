@@ -589,9 +589,9 @@ p {
 
 .footer {
   padding: 45px max(24px, calc((100% - 1160px) / 2));
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 30px;
   border-top: 1px solid #ded5ca;
   background: #111111;
@@ -611,23 +611,7 @@ p {
     }
   }
 
-  .footer__links {
-    display: flex;
-    gap: 25px;
-
-    a {
-      color: #ffffff;
-      font-size: 0.82rem;
-      font-weight: 600;
-
-      &:hover {
-        color: #9a6847;
-      }
-    }
-  }
-
   .footer__copy {
-    justify-self: end;
     color: #ffffff;
     font-size: 0.72rem;
   }
