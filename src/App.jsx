@@ -1,6 +1,6 @@
 import { useState } from "react";
-import About from "./pages/About";
-import "./pages/About.css";
+import About from "./pages/about";
+import "./pages/about.css";
 
 const menuItems = [
   {
