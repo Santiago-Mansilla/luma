@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import About from "./pages/about";
 import "./pages/about.css";
 
@@ -67,7 +67,19 @@ function App() {
   const [category, setCategory] = useState("All");
   const [selectedItem, setSelectedItem] = useState(null);
   const [sent, setSent] = useState(false);
-  
+
+  useEffect(() => {
+    if (!isAboutPage && window.location.hash) {
+      const element = document.querySelector(window.location.hash);
+
+      if (element) {
+        requestAnimationFrame(() => {
+          element.scrollIntoView();
+        });
+      }
+    }
+  }, [isAboutPage]);
+
 
   const filteredItems =
     category === "All"
