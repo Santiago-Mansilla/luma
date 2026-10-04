@@ -104,11 +104,31 @@ function App() {
             About
           </a>
 
-          <a href="/#menu" onClick={() => setMenuOpen(false)}>
+          <a
+            href={isAboutPage ? "/#menu" : "#menu"}
+            onClick={(event) => {
+              setMenuOpen(false);
+
+              if (isAboutPage) {
+                event.preventDefault();
+                window.location.href = "/#menu";
+              }
+            }}
+          >
             Menu
           </a>
 
-          <a href="/#contact" onClick={() => setMenuOpen(false)}>
+          <a
+            href={isAboutPage ? "/#contact" : "#contact"}
+            onClick={(event) => {
+              setMenuOpen(false);
+
+              if (isAboutPage) {
+                event.preventDefault();
+                window.location.href = "/#contact";
+              }
+            }}
+          >
             Contact
           </a>
         </nav>
