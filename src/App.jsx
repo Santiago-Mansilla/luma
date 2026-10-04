@@ -74,7 +74,7 @@ function App() {
 
       if (element) {
         requestAnimationFrame(() => {
-          element.scrollIntoView();
+          element.scrollIntoView({ behavior: "smooth" });
         });
       }
     }
